@@ -1,0 +1,127 @@
+/**
+ * Created by Pierre 'Niki' Bernard on 8/19/18.
+ */
+
+/*
+ ==== GENERAL ====
+ */
+
+html {
+    position: relative;
+    min-height: 100%;
+    box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+}
+
+body {
+    margin-top: 60px;
+    background-color: #39393A;
+    font-family: 'Titillium Web', sans-serif;
+    margin-bottom: 120px;
+    color: #CFCFD3;
+}
+
+.row + .row {
+    margin-top: 1rem;
+}
+
+/*
+ ==== HEADER ====
+ */
+
+header {
+    text-align: center;
+    min-height: 420px;
+    color: #39393A;
+}
+
+header h1 {
+    font-size: 6em;
+    font-weight: 200;
+}
+
+header h4 {
+}
+
+#top-navbar {
+    background: #FCA311;
+    border: 1px solid #fca311;
+    border-top: 8px solid #f59c11;
+    background: linear-gradient(135deg, #faa614 81%, #faa614 82%, #faa614 82%, #fab546 100%); /* W3C */
+    box-shadow: 0 7px 20px 0 rgba(0, 0, 0, 0.2), 0 4px 10px 0 rgba(0, 0, 0, 0.2);
+
+    border-bottom-right-radius: 60px 8px;
+}
+
+.pin {
+    background-color: #aaa;
+    display: block;
+    height: 32px;
+    width: 2px;
+    position: absolute;
+    left: 50%;
+    top: -16px;
+    z-index: 1;
+}
+
+.pin:after {
+    background-color: #39393a;
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 1px hsla(0, 0%, 0%, .2),
+    inset 2px 2px 2px hsla(0, 0%, 100%, .2),
+    inset -2px -2px 2px hsla(0, 0%, 0%, .2),
+    30px 25px 2px hsla(0, 0%, 0%, .16);
+    content: '';
+    height: 12px;
+    left: -5px;
+    position: absolute;
+    top: 6px;
+    width: 12px;
+}
+
+.pin:before {
+    background-color: hsla(0, 0%, 0%, 0.1);
+    box-shadow: 0 0 .25em hsla(0, 0%, 0%, .1);
+    content: '';
+    height: 24px;
+    width: 2px;
+    left: 0;
+    position: absolute;
+    top: 8px;
+    transform: rotate(100deg);
+    -webkit-transform: rotate(100deg);
+    transform-origin: 50% 100%;
+    -moz-transform-origin: 50% 100%;
+    -webkit-transform-origin: 50% 100%;
+}
+
+.circle {
+    display: block;
+    background: #CFCFD3;
+    border-radius: 50%;
+    height: 400px;
+    width: 100%;
+    margin: -200px 0;
+
+}
+
+/*
+==== BODY ====
+ */
+
+#homepage_intro {
+    text-align: justify;
+}
+
+/*
+==== FOOTER ====
+ */
+
+.footer {
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #FCA311;
+    display: block;
+}

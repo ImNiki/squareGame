@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}OPatou.com - Square Game{% endblock %}
+
+{% block body %}
+    <div id="homepage_intro" class="container">
+        <div class="row">
+            <h1 class="display-2">
+            Square Game
+            </h1>
+        </div>
+        <h3><small class="text-muted">L'estimation est un art difficile à maitriser</small></h3>
+
+
+        <div class="row" style="margin-top: 50px;">
+            <p>Cette activit&eacute; penible pour certain, difficile pour d'autre et malheureusement trop souvent hasardeuse a faire paniquer un manager.</p>
+            <p>En groupe nous sommes plus fort. Faisons ce travail d'estimation en equipe alors !</p>
+            <p>Cette activite a pour objectif de demontrer la force de l'estimation relative et collective par rapport a une estimation absolu.</p>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <a class="btn btn-secondary btn-lg btn-block" href="{{ path('squaregame_new_party') }}" role="button">Creer une nouvelle session</a>
+            </div>
+            <div class="col-md-4">
+                <a class="btn btn-warning btn-lg btn-block" href="#" role="button">Rejoindre une session</a>
+            </div>
+            <div class="col-md-4">
+                <a class="btn btn-light btn-lg btn-block" href="{{ path('square_game_parties') }}" role="button">Historique des sessions</a>
+            </div>
+        </div>
+    </div>
+{% endblock %}
