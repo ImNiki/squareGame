@@ -1,0 +1,31 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}OPatou.com - Previous Square Game Party{% endblock %}
+
+{% block body %}
+    <div class="container" style="margin-top: 100px;">
+
+        <table class="table">
+            <thead class="thead-light">
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Date</th>
+                <th scope="col">R&eacute;sultats</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for party in parties %}
+                <tr>
+                    <th scope="row">{{ party.id }}</th>
+                    <td>{{ party.name }}</td>
+                    <td>{{ party.created|date("d/m/Y") }}</td>
+                    <td><button type="button" class="btn btn-warning">Voir</button></td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+
+    </div>
+
+{% endblock %}
